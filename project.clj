@@ -12,7 +12,7 @@
             "fig" ["trampoline" "run" "-m" "figwheel.main"]}
 
   :profiles {:dev {:dependencies [[org.clojure/clojurescript "1.10.516"]
-                                  [com.bhauman/figwheel-main "0.2.0"]]
+                                  [com.bhauman/figwheel-main "0.2.4"]]
 
                    ;; The following 2 keys are for figwheel.main:
                    :resource-paths ["target"]
