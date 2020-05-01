@@ -1,3 +1,12 @@
-(ns figwheel-main-example.core)
+(ns figwheel-main-example.core
+  (:require
+    [reagent.core :as r]
+    ))
 
-(js/console.log "Hello, World!")
+(defn hello-world []
+  [:div "Hello, World!"])
+
+(defn mount-root []
+  (r/render-component [hello-world] (js/document.getElementById "app")))
+
+(mount-root)

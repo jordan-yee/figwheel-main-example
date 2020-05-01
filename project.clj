@@ -11,8 +11,12 @@
   :aliases {;; Use figwheel.main.api connection instead for Vim integration
             "fig" ["trampoline" "run" "-m" "figwheel.main"]}
 
-  :profiles {:dev {:dependencies [[org.clojure/clojurescript "1.10.516"]
-                                  [com.bhauman/figwheel-main "0.2.4"]]
+  :profiles {:dev {:dependencies [;; ClojureScript
+                                  [org.clojure/clojurescript "1.10.516"]
+
+                                  ;; CLJS
+                                  [com.bhauman/figwheel-main "0.2.4"]
+                                  [reagent "0.8.1"]]
 
                    ;; The following 2 keys are for figwheel.main:
                    :resource-paths ["target"]
