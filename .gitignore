@@ -1,3 +1,4 @@
+# GitHub generated .gitignore for Clojure:
 pom.xml
 pom.xml.asc
 *.jar
@@ -12,3 +13,6 @@ pom.xml.asc
 .lein-failures
 .nrepl-port
 .cpcache/
+
+# Vim .swp files:
+*.swp
