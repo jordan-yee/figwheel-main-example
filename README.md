@@ -12,18 +12,6 @@ To start a figwheel development server w/ repl:
 
     lein fig -- -b dev -r
 
-FIXME: explanation
+To create a production JavaScript build:
 
-    $ java -jar figwheel-main-example-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
+    lein build-cljs-prod
