@@ -1,10 +1,10 @@
 # figwheel-main-example
 
-FIXME: description
+A generic fullstack Clojure/ClojureScript example project for figwheel-main.
 
 ## Installation
 
-Download from http://example.com/FIXME.
+git clone https://github.com/jordan-yee/figwheel-main-example.git
 
 ## Usage
 
