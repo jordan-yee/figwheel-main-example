@@ -6,7 +6,9 @@
     ))
 
 (defn hello-world []
-  [:div "Hello, World!"])
+  [:h1
+   {:style {:text-align "center"}}
+   "Hello, World!"])
 
 (defn mount-root []
   (r/render-component [hello-world] (js/document.getElementById "app")))
