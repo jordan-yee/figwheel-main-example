@@ -16,3 +16,6 @@ pom.xml.asc
 
 # Vim .swp files:
 *.swp
+
+# Compiled JavaScript output file:
+/resources/public/js/figwheel_main_example.js
