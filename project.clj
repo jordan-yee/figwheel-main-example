@@ -9,7 +9,8 @@
   :target-path "target/%s"
 
   :aliases {;; Use figwheel.main.api connection instead for Vim integration
-            "fig" ["trampoline" "run" "-m" "figwheel.main"]}
+            "fig" ["trampoline" "run" "-m" "figwheel.main"]
+            "build-cljs-prod" ["trampoline" "run" "-m" "figwheel.main" "-bo" "prod"]}
 
   :profiles {:dev {:dependencies [;; ClojureScript
                                   [org.clojure/clojurescript "1.10.516"]
