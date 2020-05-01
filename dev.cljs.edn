@@ -1,1 +1,2 @@
-{:main figwheel-main-example.core}
+{:main figwheel-main-example.core
+ :recompile-dependents false}
