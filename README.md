@@ -8,6 +8,10 @@ git clone https://github.com/jordan-yee/figwheel-main-example.git
 
 ## Usage
 
+To start a figwheel development server w/ repl:
+
+    lein fig -- -b dev -r
+
 FIXME: explanation
 
     $ java -jar figwheel-main-example-0.1.0-standalone.jar [args]
