@@ -2,6 +2,16 @@
 
 A generic fullstack Clojure/ClojureScript example project for figwheel-main.
 
+## Included Features
+
+### Development
+- Figwheel Main
+
+### Back End
+
+### Front End
+- Reagent
+
 ## Installation
 
 git clone https://github.com/jordan-yee/figwheel-main-example.git
