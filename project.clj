@@ -8,9 +8,13 @@
   :source-paths ["src/clj" "src/cljs"]
   :target-path "target/%s"
 
-  :aliases {;; Use figwheel.main.api connection instead for vim integration
+  :aliases {;; Use figwheel.main.api connection instead for Vim integration
             "fig" ["trampoline" "run" "-m" "figwheel.main"]}
 
   :profiles {:dev {:dependencies [[org.clojure/clojurescript "1.10.516"]
-                                  [com.bhauman/figwheel-main "0.2.0"]]}
+                                  [com.bhauman/figwheel-main "0.2.0"]]
+
+                   ;; The following 2 keys are for figwheel.main:
+                   :resource-paths ["target"]
+                   :clean-targets ^{:protect false} ["target"]}
              :uberjar {:aot :all}})
