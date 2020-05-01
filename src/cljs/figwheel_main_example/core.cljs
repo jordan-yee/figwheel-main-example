@@ -1,3 +1,3 @@
 (ns figwheel-main-example.core)
 
-(js/console.print "Hello, World!")
+(js/console.log "Hello, World!")
