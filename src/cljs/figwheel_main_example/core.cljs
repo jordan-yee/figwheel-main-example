@@ -5,6 +5,8 @@
     [reagent.core :as r]
     ))
 
+(println "JavaScript loaded.")
+
 (defn hello-world []
   [:h1
    {:style {:text-align "center"}}

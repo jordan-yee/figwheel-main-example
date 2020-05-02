@@ -1,1 +1,2 @@
-{:watch-dirs ["src/cljs"]}
+{:watch-dirs ["src/cljs"]
+ :open-url "http://localhost:3000"}

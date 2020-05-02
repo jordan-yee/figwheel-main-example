@@ -3,11 +3,9 @@
   (:require
     [compojure.core :refer [defroutes GET]]
     [compojure.route :as route]
+    [figwheel-main-example.pages.home :as home]
     ))
 
-(defn page-handler [_]
-  "<h1>Hello World</h1>")
-
 (defroutes routes-handler
-  (GET "/" request (page-handler request))
+  (GET "/" request (home/page-handler request))
   (route/not-found "<h1>Page not found</h1>"))

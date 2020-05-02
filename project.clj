@@ -7,6 +7,7 @@
 
                  ;; CLJ Libraries
                  [compojure "1.6.1"]
+                 [hiccup "1.0.5"]
                  [ring/ring-core "1.8.1"]
                  [ring/ring-devel "1.8.1"]
                  [ring/ring-jetty-adapter "1.8.1"]]
