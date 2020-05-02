@@ -4,15 +4,38 @@
     [re-frame.core :as rf]
     ))
 
+;; -------------------------------------
+;; application
+
+(rf/reg-sub
+  :application
+  (fn [db _]
+    (:application db)))
+
+;; -------------------------------------
+;; page
+
 (rf/reg-sub
   :application/page
-  (fn [db _]
-    (:page db)))
+  :<- [:application]
+  (fn [application _]
+    (:page application)))
+
+(defn set-page-query  [db page]
+  (assoc-in db [:application :page] page))
+
+(rf/reg-event-db
+  :application/set-page
+  (fn [db [_ page]]
+    (set-page-query db page)))
+
+;; -----------------------------------------------------------------------------
+;; Initialization
 
 (rf/reg-event-db
   :application/initialize-db
   (fn [_ _]
-    {:page :home}))
+    {:application {:page :home}}))
 
 (defn initialize-db []
   (rf/dispatch-sync [:application/initialize-db]))
