@@ -8,6 +8,7 @@ A generic fullstack Clojure/ClojureScript example project for figwheel-main.
 - Figwheel Main
 
 ### Back End
+- Ring-based web server
 
 ### Front End
 - Reagent

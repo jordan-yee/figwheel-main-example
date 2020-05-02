@@ -2,7 +2,12 @@
   :description "A generic fullstack Clojure/ClojureScript example project for figwheel-main."
   :url "https://github.com/jordan-yee/figwheel-main-example.git"
 
-  :dependencies [[org.clojure/clojure "1.10.0"]]
+  :dependencies [;; Clojure
+                 [org.clojure/clojure "1.10.0"]
+
+                 ;; CLJ Libraries
+                 [compojure "1.6.1"]
+                 [ring/ring-core "1.8.1"]]
 
   :main ^:skip-aot figwheel-main-example.core
   :source-paths ["src/clj" "src/cljs"]
@@ -15,7 +20,7 @@
   :profiles {:dev {:dependencies [;; ClojureScript
                                   [org.clojure/clojurescript "1.10.516"]
 
-                                  ;; CLJS
+                                  ;; CLJS Libraries
                                   [com.bhauman/figwheel-main "0.2.4"]
                                   [reagent "0.8.1"]]
 
