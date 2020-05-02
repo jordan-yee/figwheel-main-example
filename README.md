@@ -8,7 +8,9 @@ A generic fullstack Clojure/ClojureScript example project for figwheel-main.
 - Figwheel Main
 
 ### Back End
-- Ring-based web server
+- Ring server
+- Compojure routing
+- Hiccup pages
 
 ### Front End
 - Reagent
@@ -19,6 +21,8 @@ git clone https://github.com/jordan-yee/figwheel-main-example.git
 
 ## Usage
 
+### Development Setup
+
 To start the back end development server:
 
     lein ring server-headless
@@ -26,6 +30,8 @@ To start the back end development server:
 To start a figwheel development server w/ repl:
 
     lein fig -- -b dev -r
+
+### Production Setup
 
 To create a production JavaScript build:
 
