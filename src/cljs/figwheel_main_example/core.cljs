@@ -13,10 +13,12 @@
 ;; Reagent container
 
 (defn container []
-  (let [page @(rf/subscribe [:application/page])]
-    (case page
-      :home [pages.home/page]
-      [pages.not-found/page])))
+  (let [page (rf/subscribe [:application/page])]
+    (fn []
+      [:div
+       (condp = @page
+         :home [pages.home/page]
+         [pages.not-found/page])])))
 
 (defn mount-root []
   (r/render-component [container] (js/document.getElementById "app")))
