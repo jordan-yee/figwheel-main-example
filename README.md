@@ -1,6 +1,6 @@
 # figwheel-main-example
 
-A generic fullstack Clojure/ClojureScript example project for figwheel-main.
+A generic fullstack Clojure/ClojureScript example project using figwheel-main.
 
 ## Included Features
 
