@@ -13,7 +13,8 @@ A generic fullstack Clojure/ClojureScript example project for figwheel-main.
 - Hiccup pages
 
 ### Front End
-- Reagent
+- Reagent components
+- Re-frame state
 
 ## Installation
 
