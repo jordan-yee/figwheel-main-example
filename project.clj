@@ -31,6 +31,7 @@
 
                                   ;; CLJS Libraries
                                   [com.bhauman/figwheel-main "0.2.4"]
+                                  [re-frame "0.12.0"]
                                   [reagent "0.8.1"]]
 
                    ;; The following 2 keys are for figwheel.main:

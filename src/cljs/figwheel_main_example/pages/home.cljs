@@ -4,7 +4,7 @@
     #_[reagent.core :as r]
     ))
 
-(defn home-page []
+(defn page []
   [:div
    [:h1
     {:style {:text-align "center"}}
