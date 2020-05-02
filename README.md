@@ -26,3 +26,7 @@ To start a figwheel development server w/ repl:
 To create a production JavaScript build:
 
     lein build-cljs-prod
+
+To start the back end development server:
+
+    lein ring server

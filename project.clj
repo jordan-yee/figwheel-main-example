@@ -7,7 +7,15 @@
 
                  ;; CLJ Libraries
                  [compojure "1.6.1"]
-                 [ring/ring-core "1.8.1"]]
+                 [ring/ring-core "1.8.1"]
+                 [ring/ring-devel "1.8.1"]
+                 [ring/ring-jetty-adapter "1.8.1"]]
+
+  :plugins [[lein-ring "0.12.5"]]
+
+  ;; lein-ring development setup
+  ;; See https://github.com/ring-clojure/ring/wiki/Setup-for-development#setup-using-the-lein-ring-plugin
+  :ring {:handler figwheel-main-example.core/app}
 
   :main ^:skip-aot figwheel-main-example.core
   :source-paths ["src/clj" "src/cljs"]
