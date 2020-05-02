@@ -2,39 +2,21 @@
   ^:figwheel-hooks ;; This enables the :after-load hook to work below.
   figwheel-main-example.core
   (:require
-    [figwheel-main-example.pages.home :as home]
-    [figwheel-main-example.pages.not-found :as not-found]
+    [figwheel-main-example.pages.home :as pages.home]
+    [figwheel-main-example.pages.not-found :as pages.not-found]
+    [figwheel-main-example.state.application :as state.application]
     [re-frame.core :as rf]
     [reagent.core :as r]
     ))
 
 ;; -----------------------------------------------------------------------------
-;; Re-frame state
-
-(rf/reg-sub
-  :page
-  (fn [db _]
-    (:page db)))
-
-(rf/reg-event-db
-  :initialize-db
-  (fn [_ _]
-    {:page :home}))
-
-(defn initialize-db []
-  (rf/dispatch-sync [:initialize-db]))
-
-;; -----------------------------------------------------------------------------
-;; Reagent page container
-
-(defn not-found-page []
-  [:h1 "Page Not Found"])
+;; Reagent container
 
 (defn container []
-  (let [page @(rf/subscribe [:page])]
+  (let [page @(rf/subscribe [:application/page])]
     (case page
-      :home [home/page]
-      [not-found/page])))
+      :home [pages.home/page]
+      [pages.not-found/page])))
 
 (defn mount-root []
   (r/render-component [container] (js/document.getElementById "app")))
@@ -46,6 +28,6 @@
 ;; Application Start-Up
 
 (defonce start-up
-  (do (initialize-db)
+  (do (state.application/initialize-db)
       (mount-root)
       true))
