@@ -2,7 +2,7 @@
 
 A generic fullstack Clojure/ClojureScript example project using figwheel-main.
 
-## Included Features
+## Included Components
 
 ### Development
 - Figwheel Main
