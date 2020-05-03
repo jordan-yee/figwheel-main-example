@@ -4,6 +4,7 @@
 
   :dependencies [;; Clojure
                  [org.clojure/clojure "1.10.0"]
+                 [yogthos/config "1.1.7"]
 
                  ;; CLJ Libraries
                  [compojure "1.6.1"]

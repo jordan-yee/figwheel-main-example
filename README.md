@@ -6,6 +6,7 @@ A generic fullstack Clojure/ClojureScript example project using figwheel-main.
 
 ### Development
 - Figwheel Main
+- yogthos/config for environment variables
 
 ### Back End
 - Ring server
