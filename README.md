@@ -25,6 +25,11 @@ git clone https://github.com/jordan-yee/figwheel-main-example.git
 
 ### Development Setup
 
+Before starting development processes, clean old builds.
+Figwheel may not reload the changes to your files if you don't:
+
+    lein clean
+
 To start the back end development server:
 
     lein ring server-headless
