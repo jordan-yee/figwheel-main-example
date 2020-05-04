@@ -70,4 +70,4 @@ To run the production server jar:
 
     java -jar <path-to-jar>
 
-This can be found in ./target/uberjar/figwheel-main-example-<VERSION>-standalone.jar
+This can be found in `./target/uberjar/figwheel-main-example-<VERSION>-standalone.jar`
