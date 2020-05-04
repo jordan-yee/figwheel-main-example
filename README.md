@@ -38,3 +38,11 @@ To start a figwheel development server w/ repl:
 To create a production JavaScript build:
 
     lein build-cljs-prod
+
+To create a production server build:
+
+    lein uberjar
+
+To run the production server jar:
+
+    java -jar <path-to-jar>
