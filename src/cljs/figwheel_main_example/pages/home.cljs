@@ -9,6 +9,7 @@
   [:div
    [:h1
     {:style {:text-align "center"}}
+    ;; Try editing this heading text to see it updated in the browser.
     "Home"]
    [:hr]
    [:div
